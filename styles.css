@@ -77,7 +77,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .logo { display: flex; align-items: center; }
-.logo-img { height: 26px; width: auto; filter: invert(1) brightness(2); }
+.logo-img { height: 43px; width: auto; filter: invert(1) brightness(2); }
 @media (prefers-color-scheme: light) {
   .logo-img { filter: none; }
 }
