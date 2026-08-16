@@ -86,3 +86,13 @@ h1, h2, h3, p { margin: 0; }
 .hero h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.15; margin: 0 0 1.25rem; }
 .hero-sub { font-size: 1.15rem; color: var(--color-text-muted); margin: 0 0 2rem; max-width: 620px; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.features { padding: 5rem 0; background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.features h2 { font-size: 2rem; margin: 0 0 2.5rem; text-align: center; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+.feature-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.75rem; }
+.feature-icon { width: 32px; height: 32px; color: var(--color-accent); margin-bottom: 1rem; }
+.feature-card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.feature-card p { margin: 0; color: var(--color-text-muted); font-size: 0.95rem; }
+@media (max-width: 860px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
