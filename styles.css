@@ -122,6 +122,19 @@ h1, h2, h3, p { margin: 0; }
 .tech-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem; }
 .badge { font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 999px; border: 1px solid var(--color-border); color: var(--color-text-muted); }
 
+.author { padding: 5rem 0; background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+.author h2 { font-size: 2rem; margin: 0 0 2.5rem; text-align: center; }
+.author-card { display: flex; align-items: center; gap: 1.75rem; max-width: 640px; margin: 0 auto; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.75rem; }
+.author-avatar { width: 88px; height: 88px; border-radius: 50%; flex-shrink: 0; }
+.author-info h3 { margin: 0 0 0.25rem; font-size: 1.15rem; }
+.author-location { margin: 0 0 0.5rem; color: var(--color-text-muted); font-size: 0.85rem; }
+.author-bio { margin: 0 0 1rem; color: var(--color-text-muted); font-size: 0.95rem; }
+.author-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+@media (max-width: 560px) {
+  .author-card { flex-direction: column; text-align: center; }
+  .author-links { justify-content: center; }
+}
+
 .contact-band { padding: 5rem 0; text-align: center; }
 .contact-band h2 { font-size: 2rem; margin: 0 0 0.75rem; }
 .contact-band p { color: var(--color-text-muted); margin: 0 0 2rem; }
